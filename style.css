@@ -26,6 +26,7 @@
     padding: 0;
     box-sizing: border-box;
     -webkit-tap-highlight-color: transparent;
+    outline: none;
     font-family: "Inter", Arial, Helvetica, sans-serif;
 }
 
@@ -34,10 +35,12 @@
 a{
     text-decoration: none;
     color: inherit;
+    outline: none;
 }
 
 html{
     color-scheme: light;
+    overflow-x: hidden;
 }
 
 body{
@@ -56,6 +59,7 @@ header{
     justify-content: space-between;
     padding-bottom: 10px;
     border-bottom: 1px solid var(--tracejado);
+    height: 60px;
 }
 
 /* left header */
@@ -77,6 +81,11 @@ header{
     font-size: 20px;
     padding: 0px 10px 0px 0px;
     transform: translateY(20%);
+    transition: transform .5s ease;
+}
+
+.menu i:hover{
+    transform: translateY(5%);
 }
 
 .menuContainer{
@@ -90,20 +99,30 @@ header{
 
 /* menu hamburguer */
 
+
 .menu-hamburguer{
+    position: fixed;
+    top: 60px;
+    right: 0;        /* prende na direita */
+    height: calc(100vh-60px);
+    width: min(80vw, 320px);
+
     display: flex;
-    align-items: end;
-    flex-flow: column;
-    transform: translateX(100%);
-    transition: transform .8s ease;
+    flex-direction: column;
+
+    background: white; /* importante pra não ficar transparente */
+
+    transform: translateX(100%); /* começa fora da tela (direita) */
+    transition: transform .35s ease;
 }
 
 .menu-hamburguer.active{
-    transform: translateX(0%);
+    transform: translateX(0); /* entra na tela */
 }
 
+
 .top-menu{
-    width: 60%;
+    width: 100%;
     display: flex;
     border-left: 1px solid var(--tracejado);
     font-size: 1.3rem;
@@ -125,8 +144,9 @@ header{
 }
 
 .search-bar:hover input{
-    width: 90%;
+    width: 100%;
 }
+
 
 .search-bar input{
     width: 0;
@@ -135,6 +155,10 @@ header{
     font: 500;
     transition: .8s;
     background-color: transparent;
+}
+
+.search-bar input:focus{
+    width: 100%;
 }
 
 .search-bar a i{
@@ -148,7 +172,7 @@ header{
 
 nav{
     border-left: 1px solid var(--tracejado);
-    width: 60%;
+    width: 100%;
     padding: 10px 0px 0px 0px;
 }
 
@@ -169,6 +193,11 @@ li{
     padding: 15px;
 }
 
+li:hover{
+    background-color: var(--icons);
+    transition: background-color .4s ease;
+}
+
 li a{
     color: var(--azul-escuro);
 }
@@ -180,7 +209,7 @@ li a{
 /* bottom menu */
 
 .bottom-menu{
-    width: 60%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -192,6 +221,11 @@ li a{
     font-size: 1.5rem;
 }
 
+.bottom-menu p i:hover{
+    transform: translateY(5%);
+    transition: transform .5s ease;
+}
+
 .bottom-menu button {
     width: 50%;
     max-width: 120px;
@@ -200,4 +234,9 @@ li a{
     border: none;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
     font-size: 1rem;
+}
+
+.bottom-menu button:hover{
+    background-color: var(--icons);
+    transition: background-color .8s ease;
 }
