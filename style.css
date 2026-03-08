@@ -31,6 +31,10 @@ a{
     text-decoration: none;
 }
 
+html{
+    color-scheme: light;
+}
+
 body{
     background-color: #fff;
     width: 100%;
