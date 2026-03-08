@@ -25,6 +25,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
     font-family: "Inter", Arial, Helvetica, sans-serif;
 }
 
@@ -32,14 +33,7 @@
 
 a{
     text-decoration: none;
-}
-
-a:focus{
-    outline: none;
-}
-
-a:focus-visible{
-    outline: 2px solid #3498db;
+    color: inherit;
 }
 
 html{
