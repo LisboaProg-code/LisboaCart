@@ -8,47 +8,92 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
 
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
     
 </head>
 <body>
     <header>
 
-        <div class="sup-conteiner">
-
-            <img src="imgs/logo.png" alt=".logo">
-
-            <div class="sup-left">
+            <div class="menu">
                 
-                <i class="ri-search-line"></i>
-                <input type="search" name="search" id="search">
+                <div class="logo">
+                    <img src="imgs/logo.png" alt="" class="logo">
+                </div>
+                <div class="menuContainer">
+                    <i class="ri-heart-line"></i>
+                    <i class="ri-shopping-cart-line"></i>
+                    <i class="ri-menu-line menu" onclick="AbrirMenu()"></i>
+                </div>
 
+            </div>
+
+    </header>
+    
+    <main>
+        
+        <section class="menu-hamburguer" id="menu">
+
+            <div class="top-menu">
+
+                <div class="search-bar">
+                    <input type="text" name="search" id="search">
+                    <a href="#"><i class="ri-search-line"></i> </a>
+                </div>
+
+            </div>
+
+            <nav>
+
+                <ul>
+
+                    <li id="top">
+
+                        <a href="#">All departaments</a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="#">Home</a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="#">Dropdown Menu</a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="#">Mega Menu</a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="#">Dashboard</a>
+
+                    </li>
+                    
+                </ul>
+                
+            </nav>
+
+            <div class="bottom-menu">
+
+                <p>
+                    <i class="ri-user-line"></i>
+                    <i class="ri-settings-2-line"></i>
+                </p>
+                
                 <button> <i class="ri-map-pin-line"></i> Location</button>
 
             </div>
 
-            <div class="sup-right">
-                <i class="ri-heart-line"></i>
-                <i class="ri-user-line"></i>
-                <i class="ri-shopping-cart-line"></i>
-            </div>
+        </section>
 
-        </div>
+    </main>
 
-        <div class="nav-conteiner">
-            
-            <nav> 
-         
-                <p><i class="ri-layout-grid-line"></i> All departaments</p>
-                
-                <p><a href="#">Home</a></p>
-                <p><a href="#">Dropdown Menu</a></p>
-                <p><a href="#">Mega Menu</a></p>
-                <p><a href="#">Dashboard</a></p>
-
-            </nav> 
-
-        </div>
-
-    </header>
 </body>
 </html>

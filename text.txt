@@ -1,0 +1,46 @@
+fazer uma sidebar
+
+
+
+
+
+    <header>
+
+        <div class="sup-conteiner">
+
+            <img src="imgs/logo.png" alt=".logo">
+
+            <div class="sup-left">
+                
+                <i class="ri-search-line"></i>
+                <input type="search" name="search" id="search">
+
+                <button> <i class="ri-map-pin-line"></i> Location</button>
+
+            </div>
+
+            <div class="sup-right">
+                <i class="ri-heart-line"></i>
+                <i class="ri-user-line"></i>
+                <i class="ri-shopping-cart-line"></i>
+                
+            </div>
+
+        </div>
+
+        <div class="nav-conteiner">
+            
+            <nav> 
+         
+                <p><i class="ri-layout-grid-line"></i> All departaments</p>
+                
+                <p><a href="#">Home</a></p>
+                <p><a href="#">Dropdown Menu</a></p>
+                <p><a href="#">Mega Menu</a></p>
+                <p><a href="#">Dashboard</a></p>
+
+            </nav> 
+
+        </div>
+
+    </header>
