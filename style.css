@@ -34,6 +34,14 @@ a{
     text-decoration: none;
 }
 
+a:focus{
+    outline: none;
+}
+
+a:focus-visible{
+    outline: 2px solid #3498db;
+}
+
 html{
     color-scheme: light;
 }
@@ -157,8 +165,9 @@ ul{
     padding-bottom: 10px;
 }
 
-#top{
+#selected{
     border-top: 1px solid var(--tracejado);
+    background-color: var(--verde);
 }
 
 li{
@@ -168,6 +177,10 @@ li{
 
 li a{
     color: var(--azul-escuro);
+}
+
+#selected a{
+    color:white;
 }
 
 /* bottom menu */
