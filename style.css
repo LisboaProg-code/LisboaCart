@@ -93,6 +93,7 @@ header{
     display: flex;
     align-items: center;
     cursor: pointer;
+    gap: 5px;
 }
 
 /* main */
@@ -204,6 +205,11 @@ li a{
 
 #selected a{
     color:white;
+}
+
+.drop ul{
+    list-style: none;
+
 }
 
 /* bottom menu */
